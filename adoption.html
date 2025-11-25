@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adoption Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+    <h1>Pet Adoption Form</h1>
+    <nav>
+        <ul>            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="donation.html">Donation</a></li>
+            <li><a href="adoption.html">Adoption Form</a></li>
+            <li><a href="checkup.html">Checkups</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="content">
+    <h2>Apply to Adopt</h2>
+    <img src="IMAGES/adoption.jpg" alt="Adopt a Pet" style="width: 100%; max-width: 600px; display: block; margin-bottom: 20px;" />
+    <form>
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="3" required></textarea><br><br>
+
+        <label for="petType">Preferred Pet Type:</label><br>
+        <select id="petType" name="petType" required>
+            <option value="">Select a pet type</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="rabbit">Rabbit</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="petAge">Preferred Age of Pet:</label><br>
+        <select id="petAge" name="petAge" required>
+            <option value="">Select age range</option>
+            <option value="puppy/kitten">Puppy/Kitten</option>
+            <option value="young">Young</option>
+            <option value="adult">Adult</option>
+            <option value="senior">Senior</option>
+        </select><br><br>
+
+        <p>Do you currently have any pets?</p>
+        <input type="radio" id="petsYes" name="havePets" value="yes" required>
+        <label for="petsYes">Yes</label><br>
+        <input type="radio" id="petsNo" name="havePets" value="no" required>
+        <label for="petsNo">No</label><br><br>
+
+        <label for="reason">Why do you want to adopt a pet?</label><br>
+        <textarea id="reason" name="reason" rows="4" required></textarea><br><br>
+
+        <input type="checkbox" id="agreement" name="agreement" required>
+        <label for="agreement">I agree to the shelter's terms and conditions of adoption.</label><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+<footer>
+    <p>&copy; 2025 Animal Shelter</p>
+</footer>
+</body>
+</html>
