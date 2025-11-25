@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkups</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+    <h1>Pet Checkup Services</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="donation.html">Donation</a></li>
+            <li><a href="adoption.html">Adoption Form</a></li>
+            <li><a href="checkup.html">Checkups</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="content">
+    <h2>Regular Health Checkups</h2>
+    <img src="IMAGES/home.jpg" alt="Pet Checkups" style="width: 100%; max-width: 600px; display: block; margin-bottom: 20px;" />
+    <p>Bring your pets for routine checkups to ensure they stay healthy and happy.</p>
+    
+    <h3>Schedule a Checkup</h3>
+    <form>
+        <label for="ownerName">Owner's Name:</label><br>
+        <input type="text" id="ownerName" name="ownerName" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="petName">Pet's Name:</label><br>
+        <input type="text" id="petName" name="petName" required><br><br>
+
+        <label for="appointmentDate">Preferred Date:</label><br>
+        <input type="date" id="appointmentDate" name="appointmentDate" required><br><br>
+
+        <label for="appointmentTime">Preferred Time:</label><br>
+        <input type="time" id="appointmentTime" name="appointmentTime" required><br><br>
+
+        <label for="reason">Reason for Checkup / Comments:</label><br>
+        <textarea id="reason" name="reason" rows="3"></textarea><br><br>
+
+        <button type="submit">Request Appointment</button>
+    </form>
+</section>
+<footer>
+    <p>&copy; 2025 Animal Shelter</p>
+</footer>
+</body>
+</html>
